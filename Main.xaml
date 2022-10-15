@@ -1,0 +1,266 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="827,2830" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="55">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="628,2765" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Feed | LinkedIn" sap:VirtualizedContainerService.HintSize="586,2675" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a2e3113f-1819-449e-acf8-6b1659150d9e" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="552,2449" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Vagas'" sap:VirtualizedContainerService.HintSize="510,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a2e3113f-1819-449e-acf8-6b1659150d9e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/feed/" DesignTimeRectangle="1032, 154, 31, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Vagas'" FullSelectorArgument="&lt;webctrl aaname='     Vagas   ' parentid='global-nav' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='     Vagas   ' parentid='global-nav' tag='SPAN' type='' class='t-12 break-words block t-black--light t-normal&amp;#xA;      global-nav__primary-link-text' check:innerText='Vagas' /&gt;" Guid="08103693-dd3b-4faa-8725-78c995e1c489" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAUCAYAAAAHpoRMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEdSURBVEhL7ZTrDYQgEISvWloi9uEWgT3QgokV7AHLYxYfP/TO+MNJNOEQ+HZmuQ8/SC/Mnl6YPT0QZnZsB8dLGoA8sRl9Hvxf2ZmF3WDZzTIq8qNhuo+lxbRMlu2E3ngmQ+F9n1rP9FHViKJrho3Jj4otApc5YgcFxeLqGihK/d61ADSwjmo7IvxGIJubAqbdFTXXj90GmINF0aVaZYFcb6yjRteKC9nlrcsSpGBqVOHwumkEgcXVsY0bqIuBC9Hfyri2AjZpmEQeNoS4UsZ1kVQrzkiVLUqZSzDpsOZaLKA/WL7XznYw+XBVMdpNTNhLpcI8hw2cAPIcjcUZ3AsLEa1grujq/9LvYLpozugSDEZhsGFP6qcxXdWDYJi/g5Rg19nvJroAAAAASUVORK5CYII=" InformativeScreenshot="193356196fe46377d7c0926fb299fe5a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Feed | LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1035, 130, 24, 24" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;nav&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div&amp;gt;div&amp;gt;li-icon&amp;gt;svg' idx='3' parentid='global-nav' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='mercado-match' parentid='global-nav' tag='svg' aaname='    ' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACVSURBVEhL7ZTLCcAgDECd1mncxmmcw5M9mBIwCDEtET8H8cG7KPVJaWpijLBTk9IDOzU5Z9ipgc2og957sNaK4p4WVfAvRmqjqiAdGkIoKxVco30NXcEvhoL08Cw5NzgsZ2nQOVdOrTRBzcxplWazCSJ4M+mAHjEmza34SmdAPwTOWR8NyjkreP5YSIjBldzgdE4PAryFqDoJ4kGz8AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Pesquisar cargo,'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510,227" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="a2e3113f-1819-449e-acf8-6b1659150d9e" Text="RPA" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/jobs/" DesignTimeRectangle="445, 134, 290, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT jobs-search-box-k…'" FullSelectorArgument="&lt;webctrl id='jobs-search-box-keyword-id-ember870' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='jobs-search-box-keyword-id-ember870' tag='INPUT' type='text' class='jobs-search-box__text-input jobs-search-box__keyboard-text-input' aaname='                        Pesquisar cargo, competência ou empresa                                                  ' /&gt;" Guid="e48b9708-632e-4994-a9ef-2089f8b27351" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASYAAAAkCAYAAAAke5dlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYzSURBVHhe7Z3PahxJDMbzpiHsoywLufiSPMRidgh+AB8MPi7MHnzIefDNh+whgV1wQm+pqlQtqVTV3WPPdE/2E/yIx/VHKkn1uWcc8JsBBoPBNmYQJhgMtjlTwvT8/cfw7Z/n4e+v/w5fAADgxJDWkOaQ9kgrwkQDECQAwBqQ9khxKsJEquUtAACAc0AaxFaECU9LAIA1IQ1iK8LkTQQAgHPCBmECAGwGNggTAGAzsEGYAACbgQ3CBADYDGyzhOnPvx6G3//4NLx990uBXntzAQDgWNgmhYlESQqShca9dQAAsBS2rjBJUfr1t/dKhOQTlFwDAADHwtYVJhIjFiVvXIqWNz7Ffjc+eSVuhr0z72w83g9X7z4Ot4/OGLhAPg/X1Fe7z87Ycg53H4e3H+6HgzMGXge2rjCxYHhjzJw5LUiYru6eyutY+LXFCVwcsW8c8dnv8g+ZhxvVZ2C7sG1KmL58fRpuP+CJBSzDF6an4SD66PAIYboE2F4kTPIzKG98ilqY6NF7FKb0BJX2t09S6m2gfLwOPx3lmlvZtPGtmt5HN7X2n+aPfq4f8veVD+epb3cfBJbG2iKr38ZyTPmtB2PPFV7f5nUci8pROEeVUxOr92TRhn5QiLUiHl0bLwcpljSezifXVDHS3jJWefaIzg2v13kUNWrM5zNdP8jxuk5ufTjOPMfmYPTtYWqr+pDGTAzGV82C88Way1pKXzxf11qeJdVzuqdfA7ZZnzERvfGXfMZUNXQuhvy6jPGlsg0SihC/jo0tCs7CwusWCRMXjOeGi5a/3u/EHsZn3G+ieLHpi09ac5/Wh73sxSqvox+nYWTz5jklp/F13YQy523qufsQZ6lNdbHG2NL4+JovuY7L5lDnROfI5ELVKfsTa/vz+QKO/qMvkcdefcZ5YZ9wWXlNVQtFiqfV6/Y8EeXLsuR8aa7sA30+ni/8m89aUz1NfCeCrStMRGyYAIkP/1aO/pWidez/aeKGLciih2SNiScowTnZtrEztJ+9dKppjxCm6Uss19j9HJwYWqjzVI3q5Uiv8fLRb3hBc57vV567ykFVL50z15fMkzNOPvhsrr/mfCd+6atXn2ZOAovXyRyYfDTXtMd654v3rJmf6T6q8ntC2CaFiVDi0eAYcXIvToQK5fkxzay+N31hvObRSbcNkvaMfmRh4j4ck4xhRhF7DSf9ZUp+qnVOMwfGnPr56F4gQfscvl8ZX7WWfPZid3NCc1KccT+Rk0L2Yf315zt5kTnp1ceO0Wvlw8+rn0sZh5PTThxLz0fz1T1Te/t9Itf48Z8GtlnCRJDwyLdu9Fr+XyZiqTi1hYmS5TS/R2yqNNfbj75XkupcSp30xqULlH2qPfSaySI6MSTqBlHnqRqV/NqGSnvwGje/5L918STNi+E3cpyfz13loPJp8uz5knkSe3tU/rrznfilr2Z9AjJOG/PcdQXZ48uEaen5KD+qD9Tefj1l70z29CvCNluYWrxEnNyLk4nJaBTmcHcjijgWNa6RzRGbRQiTvczuuGgWUYxSHNsw9HqJMOVGkHPSZxi2OVOsJT9Oo0axrGIxa9SeyXdvzxHjP7DoMyaZA8qz8mPOmuMeL4eJ0+xvqXPem+9cRCUqrfqEr0W+rM86J5I6l3F+yYl/3qnazD0f+ZK+dd3zeaWvWI/xLHV+c+/x92L+uJ72LMtge7EwEVacvDkePWEi4uHFviURuZEZW4QyFpK9t0mVa6txKrhOsJyrCsnf392INX4Ra/y9VeyhMa5lflQzNfYJfqucmlzJsaphK/IFYcS5dKxODWQO5ghTGOffOFpfZQ/hTwvuGGeJozk/5UxdaiVM45yylmNXNdC5uQp90Hxiiphc2lqqeMM+br0FC85X1VntnecH8R33k7l16hm4CGEiWJyWvp07NV5Sf16cS9eE5vYu0hmZuoTghCzpmdPD9mrCtFX+T8IUz9r9qb1RIEwrAmFahZ9ZmJIQ8eM3cYGiRECYVgTCBAAAXdggTACAzcAGYQIAbAa2Ikz4g5cAgDVx/+Al/kQ4AGBN3D8R/vz9B56aAACrQNpDGsRWhImMBki1IFAAgHNAWkOaI0WJTAkTDAaDbcEgTDAYbGM2DP8Bzwerb4TmCWAAAAAASUVORK5CYII=" InformativeScreenshot="3d692ea6aaf2d4738809548db4f16575.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vagas | LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="445, 134, 28, 32" ElementType="Text" FriendlyName="'Pesquisar cargo,'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='jobs-search-box__input-icon jobs-search-box__keywords-label' aaname='                                          ' check:innerText='Pesquisar cargo, competência ou empresa' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD8SURBVFhH7ZdBCsIwEEW9qUiPIoI3caF4EUEX3kMXCgpVRv5iwlimmSTWjkICjxIm4b+kaSETcm6/JdA+nnS9tXS+3Ok0EkEA4WMGM0EAK9cGfJsg4LF6EAS04hhUgSqQJLA7HGm13tJ01gTQ18bmYgogXAZ3QV2bl0pUQIbPF8u3MLkjck4uUQGEcrhWl3Ja3WK/aeICKStMGdPH/wvIM6LVLUwBPgN9AdYZsTAFAAsghL8CPKVc6T8hSQBwUIwSiWQBgAC55ejLf0GJRJZAH59IDCIAuhLaGI3BBABL5L6GwQRKqQJVIAi4X0zcr2bul1M01+u5V3MWIHoBdffh1kqbakwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="510,188" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <uix:NClick ClickType="Single" DisplayName="Click 'Nível de experiência'" sap:VirtualizedContainerService.HintSize="510,166" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a2e3113f-1819-449e-acf8-6b1659150d9e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/jobs/search/?currentJobId=3299442882&amp;geoId=106057199&amp;keywords=RPA&amp;location=Brasil&amp;refresh=true" DesignTimeRectangle="670, 144, 191, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Nível de experiência'" FullSelectorArgument="&lt;webctrl aria-label='Filtro Nível de experiência.' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Filtro Nível de experiência.' tag='BUTTON' type='button' class='artdeco-pill artdeco-pill--slate artdeco-pill--choice artdeco-pill--2 search-reusables__filter-pill-button&amp;#xA;     reusable-search-filter-trigger-and-dropdown__trigger' aaname='            Nível de experiência                 ' check:innerText='Nível de experiência' /&gt;" Guid="c6b80eed-047e-4608-89bb-204f5c509b45" ImageBase64="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" InformativeScreenshot="0c99ed5a26e9646484073e7d513eb76b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vagas de RPA em: Brasil | LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="833, 152, 16, 16" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl parentid='ember1360' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember1360' tag='svg' type='' class='mercado-match' aaname='    ' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABPSURBVDhP7dE7CgAgDERBT5sL5oAri41FfqKFRR6kk8HowOMavK/BlapCRMLhGSv3hhHqYSxc2UIjjKVvuKMZxkqfQqiCsRJ4UoP3/Q4CE+CfDVeEVu3TAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="510,166" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a2e3113f-1819-449e-acf8-6b1659150d9e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/jobs/search/?currentJobId=3299442882&amp;geoId=106057199&amp;keywords=RPA&amp;location=Brasil&amp;refresh=true" DesignTimeRectangle="625, 294, 69, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl idx='3' parentid='artdeco-hoverable-artdeco-gen-80' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='artdeco-hoverable-artdeco-gen-80' tag='LABEL' class='search-reusables__value-label' aaname='                    ' check:innerText='Júnior&amp;#xD;&amp;#xA;Filtrar por Júnior' /&gt;" Guid="6543f819-0ae2-441f-b9c8-a183d00b4594" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAYCAYAAAC2odCOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFxSURBVFhH7Zk9joMwEEb3tK65DUrFJUJN7ZT0vgISFeUsH7aHwQorLz+7duQnEQF2vmQexhDyRYK+76lpGqqqipRSpxZkIAuZucOSUAwK67qOpmlye4+DDGQhM3dRLAlHHUVdDTKRnTMsCUf8ihEUgkxk5wxLwjxyF3dm/wVFUgRFUgTJSRpfNamncVtbzHO+vdhpe8eS9dA0uu2jZCMJ++vX2XKPkY+k4X8EgbQlDZpq1ZJUtpVoqFU1aYN+/m5f9DdtcLqNpB/rrwKF9w6uacZma9dnbfsASXNBLMJJ8O0bSUEbQLvIX7IDceAzRpIsSoqR62+yvLjW7dxmryQpiSfoKyXJdQGumP7zspEkv/T9I8l+XmYjKSzazjm+CFuonFd+IWl+jZqT0pVkZaAfC/Eshdg2FGyOjqSF8Or20yhdSe50S5EiKYIiKQKWVB667cOSyuPbfVhS+SNgH5YEUAyOOgrDPHJmQQaychdERPQNZQEdvn34Kh4AAAAASUVORK5CYII=" InformativeScreenshot="f9588606bbb59195108e4ec94f3a9834.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vagas de RPA em: Brasil | LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="657, 294, 37, 20" ElementType="Text" FriendlyName="'Júnior'" FullSelectorArgument="&lt;webctrl aaname='               Júnior             ' parentid='artdeco-hoverable-artdeco-gen-80' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='               Júnior             ' parentid='artdeco-hoverable-artdeco-gen-80' tag='SPAN' type='' class='t-14 t-black--light t-normal' check:innerText='Júnior' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAAYCAYAAABnRtT+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD3SURBVFhH7ZSNDYMgEEY7LSsR95AhcAdWMGGCK8efB6JBvaZtwkts1MPvXhF8wR8wJLkYklwMSS52knaRIGYTr0rMLA5rLXzWpMHG67t0S+J9uTxtd49+yfU7gsi55KpBCgVUufwTBpSQoA2Oc0vBH2S8UdXrtqCnNA4P9+waS46QreOYrcYg6QKzSJRI9UKyqiFYJ/k+uxJHeGaShlIxet7ISuIq3iyzN5qSeYNwStJzAn4xUr9uSfrQ52cy9Ls4k3XTsOZSSGhE19UFSffbtSaPJYMM7rgslPBBoYYNzd2Z9NS7++wtbexe9y8yJLkYklwMSR4A3qKIw94W8x33AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="BottomLeft" X="13" Y="-10" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Exibir resultados'" sap:VirtualizedContainerService.HintSize="510,166" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a2e3113f-1819-449e-acf8-6b1659150d9e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/jobs/search/?currentJobId=3299442882&amp;geoId=106057199&amp;keywords=RPA&amp;location=Brasil&amp;refresh=true" DesignTimeRectangle="763, 483, 139, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Exibir resultados'" FullSelectorArgument="&lt;webctrl parentid='ember1364' tag='SPAN' /&gt;" FuzzyAccuracy="0.46" FuzzySelectorArgument="&lt;webctrl parentid='ember1364' tag='SPAN' type='' class='artdeco-button__text' aaname='     Exibir resultados ' /&gt;" Guid="5cf2b941-3ee6-42ab-ad62-4b9c1fa5371c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAYCAYAAAA4e5nyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUbSURBVGhD7VhNaxpdFO46P8V/kJ+Qpf8gq8K7zC4LF91k0VUQsvDdBDelWLIw0IWhUEQIIyLB14RyadpMUGQcjNFBZGKCPD33a+b6MXmNteV9O3PhAe/XOWfuc+455/pq63UFCeKDhPCYISE8ZkgIjxkSwmOGhPCYYaOE71TG8AEMma3GHDDqYzzA/txaE/tfnvgq2FZz6fx/EftM2szOl8//LH6V/FnCz8dCyUL7F8I0NOHdyxs1tiLhlxNaNAWrJIRr/F7CRz5YZxzi2sGuuW5lrEb4/xGLhDDkv08wfBwjP7d2HfxWwodM39CfRZwIv0FZHN+fQnimjcYjn52glJ8b4159RP2F/SHhb077sB/ENEXvJzDrG1JK9sLHaTm3fTRG4mfEh2v5I5RupQw4jpzLMGSZj+FUDuNxVufWURsl5wm+MV8+NWXOOmne4YO05oPsz9j8YYCh6JlNEX94g+It3XytZzrFsONiLxPK3jqwUSRbdBs6PeSWEL793kXjPlwnvumyjbSWQ0if9cFGWhngj+jsjfkX3fDUp5HI0fxQd6ivP9q2ruSaKMIfpvAfJ2hcuiiysfr4KRqfamJdFOEir1ssJGkBSj4133GxGxziFRHElUxhX/dQsHqo3su+rBO+ouTxXU+wmZwvu3R4Qv8ahBOpOYsOWjj0BFXLJZkt/MX3kjN0xz6q9O2hHWTvtS5stS005pHjkpyGFxKmzyR1opyKXxZuc30AOkrR+HmLM8r30eUDpK9cJ320xh7PRpyViraQwCbyHXlw1c892HzSdUMPiyLcjAqE1Gd1bVtt0Y8k/K4nHEvvW4SW76N4aIyfeqp4/BqOHSp7hUztiCNkD/S+GlLCYdYgXKyJCOkZkmv2tR1eX9ZFH6Wt3K7wpl6heMcHtfwmCi7v0bl/lJdEyu6gIXyDdHLbqWjmzb9tYztYM6t/paKtWmHhmiMXtnbAqY8CD+Vz+xcIn8/hGZLBxync7FE/ivBQThSWy99Tz7ylTayt4e21WsNDrDNA/v3FszLXJ5zh7YUHdkfpgyJd0JR8battGUQSZuVHnCNhxq5MC1VFoQj3zMFe4NASLy/aDkm5yOXUeO42b9aqhB+r0KNu8KYJ1/LsOsPu8Rz+biqPr2HnxEE5yJ0U7s95atok4WFE7FI9UrA6eHOsbriSvyhHYi3C+Vimif0KhXsVRIP6Sq1/IeE6N5KCuidCkd+R+VzMRxHOQ66hNF0XQSzIY5smfItqDdHMdDODC2wbnp96R3mWrxdhVhNnpgk99lLCl9inCzw9psIwWh0j9IZ5XcpnQc1RPjFDOhXNvG6YjpDjIf2AviuQUaPowf/foNT2TxihVwrprNMTlV6a5gXJ31tkXA3ZlvTe4A+TSMKpqaKtRBWrojtwgo0Tzg9fcS4LIVnAsHsfJUEY7VP2FGiu1JH6ee7jB5Vrie6SIuo5wptB3h12+lSZU5p4TYSIrVQ8fuE2eLCpghbfr20OXj+0zx2gqPTp8K/lBwXzkqKte6FqFc6P/l5eRIp5Ko7PtI0rFm1kHYUFlbunRhg/UuFJh/YowunjcpauzqmNxiie6pz5KwgnqKdO8OziufreQ1bYbqNkPm/oELu3xlOJnmzlO7WR9tmsTbJ45znCeSVtPD0fSBeNpc88dHUKfCCHO3EXbE69ozEdgpW+7BL5808ujMlpzacmPX27JoXz84RZwhP88UgIjxkSwmOGhPCYISE8ZkgIjxUq+AHYsWWxikGn2wAAAABJRU5ErkJggg==" InformativeScreenshot="2e54d4cf92379e5c0f194de77d567281.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vagas de RPA em: Brasil | LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="764, 475, 156, 36" ElementType="Button" FriendlyName="'Exibir resultados'" FullSelectorArgument="&lt;webctrl id='ember1364' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember1364' tag='BUTTON' type='button' class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view ml2' aaname='      Exibir resultados ' check:innerText='Exibir resultados' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Vaga' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Vaga Url' ReferenceName='Column1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Empresa' ReferenceName='Column2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Cidade' ReferenceName='Column3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="510,166" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a2e3113f-1819-449e-acf8-6b1659150d9e" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="396, 253, 486, 3987" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='main' tag='UL' /&gt;" Guid="9ee1e488-299c-414e-99b6-3bfcfb5c4b39" InformativeScreenshot="6fac6f62eb19105c65a1ca631a40f1c4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vagas de RPA em: Brasil | LinkedIn' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="ExcelVagasLinkedIn.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="476,258" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Plan1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[ExtractDataTable]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+            <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="cbbenterpriserpa@gmail.com" DisplayName="Use Gmail" EmailAddress="cbbenterpriserpa@gmail.com" sap:VirtualizedContainerService.HintSize="510,704" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="False">
+              <umab:GmailApplicationCard.Body>
+                <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="476,511" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,419" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="AUTOMAÇÃO VAGAS LINKEDIN" To="cbbenterpriserpa@gmail.com" UseDocumentAsBody="False">
+                      <umab:SendMailX.Files>
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                          <InArgument x:TypeArguments="x:String">ExcelVagasLinkedIn.xlsx</InArgument>
+                        </scg:List>
+                      </umab:SendMailX.Files>
+                      <umab:SendMailX.HtmlBodyFromFile>
+                        <umabh:HtmlContentArgument FilePath=".data/HtmlContent0.html">
+                          <umabh:HtmlContentArgument.RuntimeImages>
+                            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                          </umabh:HtmlContentArgument.RuntimeImages>
+                          <umabh:HtmlContentArgument.ValueMappings>
+                            <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                          </umabh:HtmlContentArgument.ValueMappings>
+                        </umabh:HtmlContentArgument>
+                      </umab:SendMailX.HtmlBodyFromFile>
+                    </umab:SendMailX>
+                  </Sequence>
+                </ActivityAction>
+              </umab:GmailApplicationCard.Body>
+              <umab:GmailApplicationCard.ClientId>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </umab:GmailApplicationCard.ClientId>
+              <umab:GmailApplicationCard.ClientSecret>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </umab:GmailApplicationCard.ClientSecret>
+            </umab:GmailApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="7fc190dfa07f99a76e939e109b20b588.jpg" Selector="&lt;html app='chrome.exe' title='Feed | LinkedIn' /&gt;" Url="https://www.linkedin.com/feed/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
